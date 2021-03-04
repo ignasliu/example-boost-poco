@@ -7,8 +7,8 @@ if(EXISTS ${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
   conan_basic_setup()
 endif()
 
-add_executable(timer timer.cpp)
-target_link_libraries(timer ${CONAN_LIBS})
+# add_executable(timer timer.cpp)
+# target_link_libraries(timer ${CONAN_LIBS})
 
 # But we could use CMake find_package as well, or link with libraries individually
 find_package(Boost REQUIRED regex)
